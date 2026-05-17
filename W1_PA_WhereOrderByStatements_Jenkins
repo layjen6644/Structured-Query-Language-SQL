@@ -1,0 +1,34 @@
+--Question 1:
+SELECT first_name,
+       last_name,
+       dept_code
+FROM l_employees
+WHERE dept_code IN('SAL', 'SHP', 'ACT');
+
+--Question 2: 
+SELECT first_name,
+       last_name,
+       employee_id
+FROM l_employees
+WHERE employee_id BETWEEN 201 AND 205;
+
+--Question 3: 
+SELECT first_name,
+       last_name,
+       employee_id
+FROM l_employees
+WHERE employee_id LIKE '%1';
+
+--Question 4: 
+SELECT *
+FROM l_employees
+WHERE manager_id IS null;
+
+--Question 5: 
+SELECT department_name AS dept
+FROM l_departments
+ORDER BY department_name;
+
+SELECT department_name AS dept
+FROM l_departments
+ORDER BY dept;
